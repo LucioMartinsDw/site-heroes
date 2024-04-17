@@ -1,0 +1,316 @@
+/* Estilos Básicos */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex; /* Usa flexbox para o layout */
+  justify-content: space-between; /* Alinha os elementos horizontalmente */
+  align-items: center; /* Alinha os elementos verticalmente */
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  list-style: none; /* Remove marcadores de lista padrão */
+  padding: 0;
+  margin: 0; /* Remove margem padrão */
+  opacity: 0; /* Opacidade inicial para a animação */
+  animation: fadeIn 1s ease-in forwards; /* Animação de fade-in ao carregar */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+/* Estilo de Link de Navegação Melhorado */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em; /* Tamanho de fonte ligeiramente maior */
+  font-weight: bold; /* Peso da fonte em negrito */
+  padding: 10px 15px; /* Adiciona preenchimento ao redor do texto */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Remove cor de fundo padrão */
+  position: relative; /* Habilita efeitos ao passar o mouse */
+  transition: color 0.3s ease; /* Transição de cor suave */
+}
+
+nav a:hover {
+  color: #8a142e; /* Verde mais claro ao passar o mouse */
+}
+
+/* Seção Herói */
+#heroi {
+  text-align: center;
+  padding: 50px;
+  position: relative; /* Para um melhor posicionamento do vídeo */
+}
+
+.heroi-image {
+  width: 80%; /* Ajusta a largura da imagem */
+  max-width: 800px; /* Define a largura máxima */
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+  margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+}
+
+#heroi iframe {
+  width: 60%; /* Ajusta a largura do vídeo */
+  max-width: 600px; /* Define a largura máxima */
+  height: 315px; /* Ajusta a altura do vídeo */
+  margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+  border: none; /* Remove a borda padrão do vídeo */
+}
+
+#heroi button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; /* Torna o botão de largura total */
+  margin: 20px auto; /* Centraliza o botão horizontalmente */
+}
+
+#heroi button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para a Seção de Personagens */
+#personagens {
+  padding: 30px;
+  background-color: #fff; /* Fundo claro para contraste */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.personagem-grid {
+  list-style: none; /* Remove marcadores de lista padrão */
+  padding: 0;
+  display: flex; /* Usa flexbox para o layout */
+  flex-wrap: wrap; /* Quebra os personagens em várias linhas */
+  justify-content: center; /* Centraliza os personagens horizontalmente */
+  align-items: center; /* Centraliza os personagens verticalmente */
+  gap: 30px; /* Adiciona espaçamento entre os personagens */
+}
+
+.personagem-card {
+  width: 300px; /* Ajusta a largura do cartão */
+  min-height: 350px; /* Define a altura mínima do cartão */
+  border: 1px solid #ddd; /* Adiciona uma borda */
+  border-radius: 5px; /* Cantos arredondados */
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  margin: 20px; /* Adiciona margem ao redor dos cartões */
+  display: flex; /* Usa flexbox para o layout */
+  flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+.personagem-card img {
+  width: 100%; /* Tornar a imagem responsiva */
+  height: auto; /* Manter a proporção */
+  border-radius: 50%; /* Imagem circular */
+  margin-bottom: 20px;
+}
+
+.personagem-card h3 {
+  font-size: 1.5em;
+  margin-top: 10px; /* Espaço entre a imagem e o título */
+}
+
+.personagem-card p {
+  font-size: 1em;
+  margin-top: 5px; /* Espaço entre o título e o parágrafo */
+  color: #666; /* Cor do texto mais clara para melhor contraste */
+  width: 100%; /* Parágrafo com a mesma largura que a imagem */
+}
+
+/* Estilos para a Seção de Ação */
+#acao {
+  padding: 50px;
+  text-align: center;
+  background-color: #eee; /* Fundo claro para contraste */
+  margin-top: 20px; /* Adiciona espaço acima da seção */
+}
+
+#acao h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333; /* Texto mais escuro para chamada de ação */
+}
+
+#acao p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #666; /* Cor do texto mais clara para legibilidade */
+}
+
+#acao a {
+  background-color: #007bff; /* Cor do botão */
+  color: #fff; /* Cor do texto do botão */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove sublinhado */
+}
+
+#acao a:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para o Carrossel */
+#carrossel {
+  width: 80%; /* Ajustar a largura conforme necessário */
+  margin: 20px auto; /* Adicionar margem para melhor posicionamento */
+  overflow: hidden; /* Ocultar conteúdo que transborda */
+  position: relative; /* Assegurar posicionamento relativo para os filhos absolutos */
+}
+
+.carrossel-imagens {
+  display: flex;
+  position: relative;
+  animation: slideShow 10s infinite; /* Animação para o slideshow */
+}
+
+.carrossel-imagens li {
+  flex: 0 0 50%; /* Define a largura para cada imagem */
+  list-style: none;
+}
+
+.carrossel-imagens img {
+  width: 100%; /* Tornar a imagem responsiva */
+  height: auto; /* Manter a proporção */
+}
+
+@keyframes slideShow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Deslizar para a esquerda */
+  }
+}
+
+.seta-esquerda,
+.seta-direita {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centralizar verticalmente */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Preto semi-transparente */
+  color: #fff; /* Cor do texto branca */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.seta-esquerda {
+  left: 10px; /* Posicionar à esquerda */
+}
+
+.seta-direita {
+  right: 10px; /* Posicionar à direita */
+}
+
+.seta-esquerda:hover,
+.seta-direita:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro ao passar o mouse */
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 480px) {
+  /* Ajustar estilos para dispositivos móveis */
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.2em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    padding: 8px 12px;
+  }
+
+  #heroi {
+    padding: 20px;
+  }
+
+  #heroi button {
+    padding: 8px 12px;
+  }
+
+  .personagem-card {
+    width: 200px;
+  }
+}
+
+/* Estilos para tablets e dispositivos menores */
+@media only screen and (max-width: 768px) {
+  /* Ajustar estilos para tablets e dispositivos menores */
+  header {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  #heroi {
+    padding: 30px;
+  }
+
+  #heroi button {
+    padding: 8px 15px;
+  }
+
+  .personagem-card {
+    width: 250px;
+  }
+}
